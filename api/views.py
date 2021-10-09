@@ -11,7 +11,7 @@ class ProjectViewSet(viewsets.ModelViewSet):
     """
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class ExperienceViewSet(viewsets.ModelViewSet):
@@ -20,16 +20,16 @@ class ExperienceViewSet(viewsets.ModelViewSet):
     """
     queryset = Experience.objects.all()
     serializer_class = ExperienceSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     
 
 class EducationViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Education to be created, viewed or modified.
     """
-    queryset = Education.objects.all()
+    queryset = Education.objects.all().order_by('-end_date')
     serializer_class = EducationSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class SkillViewSet(viewsets.ModelViewSet):
@@ -38,7 +38,7 @@ class SkillViewSet(viewsets.ModelViewSet):
     """
     queryset = Skill.objects.all()
     serializer_class = SkillSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class LinkViewSet(viewsets.ModelViewSet):
@@ -47,6 +47,6 @@ class LinkViewSet(viewsets.ModelViewSet):
     """
     queryset = Link.objects.all()
     serializer_class = LinkSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     
 
