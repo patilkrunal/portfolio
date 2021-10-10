@@ -1,8 +1,18 @@
 from rest_framework import viewsets, permissions
-from .models import Project, Experience, Education, Skill, Link
+from .models import BasicInfo, Project, Experience, Education, Skill, Link, \
+    Blog
 from .serializers import \
-    ProjectSerializer, ExperienceSerializer, EducationSerializer, \
-    SkillSerializer, LinkSerializer
+    BasicInfoSerializer, ProjectSerializer, ExperienceSerializer, \
+    EducationSerializer, SkillSerializer, LinkSerializer, BlogSerializer
+
+
+class BasicInfoViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows Basic Information to be created, viewed or modified
+    """
+    queryset = BasicInfo.objects.all()
+    serializer_class = BasicInfoSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class ProjectViewSet(viewsets.ModelViewSet):
@@ -49,4 +59,13 @@ class LinkViewSet(viewsets.ModelViewSet):
     serializer_class = LinkSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     
+
+class BlogViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows Links to be created, viewed or modified.
+    """
+    queryset = Blog.objects.all()
+    serializer_class = BlogSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
 

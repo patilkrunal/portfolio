@@ -2,6 +2,15 @@
 
 TODO:  
 
+- [x] BasicInfo  
+    - Name
+    - Place
+    - CaptionTags
+    - Description
+    - AboutTitle
+    - AboutDescription
+    - ProfileImageURL
+
 - [x] Project  
     - title
     - description
@@ -27,20 +36,22 @@ TODO:
 
 
 - [x] Skills  
-    - skill_name
-    - skill_priority
-    - skill_description
-
-- [x] Blogs  
-    - post_title
-    - slug
-    - author
-    - created_on
-    - updated_on
-    - content
-    - status
+    - name
+    - priority
+    - description
 
 - [x] Contact Links  
     - name
     - url
     - icon_url
+
+- [x] Blogs  
+    - post_title
+    - slug
+    - author
+    - tags
+    - created_on
+    - updated_on
+    - content
+    - status
+    - image_url

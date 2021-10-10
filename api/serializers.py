@@ -1,7 +1,14 @@
 from abc import ABC
 
 from rest_framework import serializers
-from api.models import Project, Experience, Education, Skill, Link
+from api.models import BasicInfo, Project, Experience, Education, Skill, Link, \
+    Blog
+
+
+class BasicInfoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BasicInfo
+        fields = "__all__"
 
 
 class ProjectSerializer(serializers.ModelSerializer):
@@ -31,5 +38,11 @@ class SkillSerializer(serializers.ModelSerializer):
 class LinkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Link
+        fields = "__all__"
+
+
+class BlogSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Blog
         fields = "__all__"
 
