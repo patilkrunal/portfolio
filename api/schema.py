@@ -65,16 +65,16 @@ class Query(graphene.ObjectType):
     def resolve_experiences(root, info, **kwargs):
         return Experience.objects.all()
 
-    def resolve_basicinfo(root, info, **kwargs):
+    def resolve_education(root, info, **kwargs):
         return Education.objects.all()
 
-    def resolve_projects(root, info, **kwargs):
+    def resolve_skill(root, info, **kwargs):
         return Skill.objects.all()
 
-    def resolve_experiences(root, info, **kwargs):
+    def resolve_link(root, info, **kwargs):
         return Link.objects.all()
         
-    def resolve_experiences(root, info, **kwargs):
+    def resolve_blog(root, info, **kwargs):
         return Blog.objects.all()
 
 
