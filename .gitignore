@@ -1,6 +1,8 @@
 .vscode
+.idea
 db.sqlite3
 src/.env
+env/
 
 
 **/migrations
