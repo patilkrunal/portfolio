@@ -15,20 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
-from rest_framework import routers
+from graphene_django.views import GraphQLView
 from api.urls import router as api_router
+from api.schema import schema
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('homepage.urls')),
+    path('graphql', GraphQLView.as_view(graphiql=True, schema=schema)),
     path('api/', include(api_router.urls)),
     path('api-auth/', include('rest_framework.urls'))
 ]
-
-# if settings.DEBUG:
-#     urlpatterns += static(settings.STATIC_URL,
-#                           document_root=settings.STATIC_ROOT)
-#     urlpatterns += static(settings.MEDIA_URL,
-#                           document_root=settings.MEDIA_ROOT)
