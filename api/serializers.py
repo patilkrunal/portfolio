@@ -8,7 +8,7 @@ from api.models import BasicInfo, Project, Experience, Education, Skill, Link, \
 class BasicInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = BasicInfo
-        fields = "__all__"
+        fields = ["__all__"]
 
 
 class ProjectSerializer(serializers.ModelSerializer):
