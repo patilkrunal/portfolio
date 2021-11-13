@@ -1,0 +1,33 @@
+<!-- + Projects subsection -->
+<div class="subsection">
+  <h2 class="mt-5">
+    <span class="dot"></span>What have I
+    <span class="word">experimented with</span>?
+  </h2>
+  <div class="row">
+    {% for project in projects %}
+    <div class="col-lg-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="card-title">
+            <h3>{{project.title}}</h3>
+            <h4>
+              <i class="fas fa-code mr-2"></i>
+              {{project.tech_stack}}
+            </h4>
+          </div>
+
+          <div class="card-text">{{project.description}}</div>
+        </div>
+        <div class="card-footer">
+          <a href='{{project.url}}' target="_blank" rel="noreferrer">
+            View
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+<!-- - Projects subsection -->

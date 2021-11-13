@@ -1,9 +1,10 @@
 from rest_framework import viewsets, permissions
 from .models import BasicInfo, Project, Experience, Education, Skill, Link, \
-    Blog
+    Blog, Tag
 from .serializers import \
     BasicInfoSerializer, ProjectSerializer, ExperienceSerializer, \
-    EducationSerializer, SkillSerializer, LinkSerializer, BlogSerializer
+    EducationSerializer, SkillSerializer, LinkSerializer, BlogSerializer, \
+    TagSerializer
 
 
 class BasicInfoViewSet(viewsets.ModelViewSet):
@@ -31,7 +32,7 @@ class ExperienceViewSet(viewsets.ModelViewSet):
     queryset = Experience.objects.all()
     serializer_class = ExperienceSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    
+
 
 class EducationViewSet(viewsets.ModelViewSet):
     """
@@ -58,7 +59,16 @@ class LinkViewSet(viewsets.ModelViewSet):
     queryset = Link.objects.all()
     serializer_class = LinkSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    
+
+
+class TagViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows Tags to be created, viewed or modified.
+    """
+    queryset = Tag.objects.all()
+    serializer_class = TagSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
 
 class BlogViewSet(viewsets.ModelViewSet):
     """
@@ -67,5 +77,3 @@ class BlogViewSet(viewsets.ModelViewSet):
     queryset = Blog.objects.all()
     serializer_class = BlogSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-
-

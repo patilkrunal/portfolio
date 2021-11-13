@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Single Blog | Krunal Patil{% endblock %}
+
+{% block content %}
+<section class="blogpost" id="top">
+  <div class="container">
+    <div class="mx-8">
+      <div class="row justify-content-center mb-4">
+        <div class="col-12">
+          <h1>{{blog.title}}</h1>
+        </div>
+        <div class="col-auto tagline">
+          <span role="img" aria-label="Pencil emoji" class="mx-1">
+            ✏️️
+          </span>
+          {{blog.author}}
+        </div>
+        <div class="col-auto tagline">
+          <span role="img" aria-label="Calendar emoji" class="mx-1">
+            📅
+          </span>
+          {{blog.created_on}}
+        </div>
+        <div class="col-auto tagline">
+          <span role="img" aria-label="Eyes emoji" class="mx-1">
+            👀
+          </span>
+          2 mins
+        </div>
+      </div>
+
+      {% include '../components/share-buttons.html' %}
+
+      <Img class="featured-image" fluid={data.mdx.frontmatter.featuredImage.childImageSharp.fluid} />
+      <div class="content">
+        <MDXRenderer>{{blog.content|safe}}</MDXRenderer>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-6">
+          <!-- {pageContext.previous === false ? null : ( -->
+          <a class="link" aria-current="page" href="{% url 'single-blog' blog.slug %}">
+            <span role="img" aria-label="Left pointing emoji" class="mr-1">
+              👈 Previous
+            </span>
+          </a>
+        </div>
+        <div class="col-6 text-end">
+          <a class="link" aria-current="page" href="{% url 'single-blog' blog.slug %}">
+            <span role="img" aria-label="Right pointing emoji" class="mr-1">
+              👉 Next
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% include '../components/subscribe.html' %}
+  </div>
+</section>
+{% endblock %}

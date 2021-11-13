@@ -1,0 +1,50 @@
+{% load static %}
+<section class="subscribeform">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-6 col-s-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2>Tech content to your inbox</h2>
+            <p>
+              Thank you for reading! Join my mailing list to be the first
+              to read about my thoughts on the web.
+            </p>
+            <form onSubmit={this.submitForm} action="https://formspree.io/process.env.FORMSPREE_API_KEY_SUBSCRIBE
+              https://formspree.io/ https://formspree.io/data.site.siteApiKeys.formSpree" method="POST" id="contactId">
+              <div class="form-group mt-4">
+                <!-- <label htmlFor="subscribeName">Your first name</label> -->
+                <input type="text" name="firstName" class="form-control" id="subscribeName" aria-describedby="emailHelp"
+                  placeholder="Your first name" required />
+              </div>
+
+              <div class="form-group mt-2">
+                <!-- <label htmlFor="subscribeEmail">Email address</label> -->
+                <input type="email" name="email" class="form-control" id="subscribeEmail" aria-describedby="emailHelp"
+                  placeholder="Your email address" required />
+              </div>
+
+              <!-- {status === "SUCCESS" ? (
+              <div class="alert alert-success" role="alert">
+                Thank you for your message! I'll get back to you soon.
+              </div>
+              ) : ( -->
+              <button class="btn btn-xl shadow-sm">
+                Subscribe
+              </button>
+              <!-- )}
+              {status === "ERROR" && (
+              <div class="alert alert-danger mt-2" role="alert">
+                Uh oh! There was an error. Please refresh and we'll try
+                again.
+              </div> -->
+            </form>
+            <p class="disclaimer">
+              Strictly no spam. Unsubscribe anytime.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

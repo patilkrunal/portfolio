@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Blogs | Krunal Patil{% endblock %}
+
+{% block content %}
+<section class="blog" id="top">
+  <div class="container">
+    <div class="title">
+      <h1>Blog | My digital garden</h1>
+      <h4>{{blogs.count}} Posts</h4>
+    </div>
+    <div>
+      {% for blog in blogs %}
+      <a class="nav-link" aria-current="page" href="{% url 'single-blog' slug=blog.slug %}">
+        <div class="card">
+          <div class="card-body">
+            <div class="col-8">
+              {{blog.title}}
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% include '../components/subscribe.html' %}
+  </div>
+</section>
+{% endblock %}
