@@ -9,8 +9,8 @@ env/
 *.DS_Store
 **/__pycache__
 **/.DS_Store
-/static/*
 assets/
+media/
 
 
 ## Ignore Visual Studio temporary files, build results, and
