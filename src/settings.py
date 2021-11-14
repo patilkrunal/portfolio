@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "secret")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'gitkp.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'gitkp.pythonanywhere.com', '*']
 
 # Application definition
 
