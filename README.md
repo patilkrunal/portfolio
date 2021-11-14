@@ -1,5 +1,5 @@
-[Dashboard](https://www.pythonanywhere.com/user/gitkp/webapps/#tab_id_gitkp_pythonanywhere_com)
-[Website](https://gitkp.pythonanywhere.com/)
+[patilkrunal.herokuapp.com](https://patilkrunal.herokuapp.com/)  
+[gatsby js dashboard](https://www.pythonanywhere.com/user/gitkp/webapps/#tab_id_gitkp_pythonanywhere_com)
 
 
 # Krunal Portfolio API's
