@@ -1,6 +1,7 @@
 from django.contrib import admin
 from api.models import BasicInfo, Project, Experience, Education, Skill, Link, \
-    Blog
+    Blog, Tag
+
 
 # Register your models here.
 admin.site.register(BasicInfo)
@@ -10,3 +11,4 @@ admin.site.register(Education)
 admin.site.register(Skill)
 admin.site.register(Link)
 admin.site.register(Blog)
+admin.site.register(Tag)

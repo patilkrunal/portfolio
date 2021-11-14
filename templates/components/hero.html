@@ -1,0 +1,57 @@
+{% load static %}
+<section class="hero" id="hero">
+  <div class="container h-100">
+    <div class="row h-100 justify-content-around">
+      <!-- + Hero section: Left side -->
+      <div class="col-lg-5 my-auto">
+        <div class="hero-introduction">
+          <h1>
+            <span class="wave" role="img" aria-label="Hand wave">
+              👋
+            </span>
+          </h1>
+          <h1>Hi. I'm {{basic_info.name}}</h1>
+          <p>
+            {{basic_info.description}}
+          </p>
+          <a class="main-button btn btn-primary shadow-sm" href="#">Get to know me</a>
+          <a href="https://bit.ly/krunal-cv" target="_blank" rel="noreferrer"
+            class="main-button btn btn-primary shadow-sm ml-3">
+            Download my resume
+          </a>
+        </div>
+      </div>
+      <!-- - Hero section: Left side -->
+
+      <!-- + Hero section: Right side -->
+      <div class="col-lg-4 my-auto">
+        <div class="hero-bio">
+          <div class="card shadow-sm mb-5">
+            <div class="card-body">
+              <div class="icon">
+                <img src="{% static 'images/photo.jpg' %}"
+                  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 500ms ease 0s;"
+                  loading="lazy" alt="Hero Icon" />
+              </div>
+              <h3 class="card-title">@patilkrunal</h3>
+              <h4>
+                <span class="mr-1" role="img" aria-label="pin" alt="pin emoji">
+                  📍
+                </span>
+                Nashik
+                <br />
+              </h4>
+              <p class="card-text">
+                Backend enthusiast,
+                <br />
+                Compassionate
+              </p>
+              {% include '../components/links.html' %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- - Hero section: Right side -->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,83 @@
+section.about {
+  min-height: 100vh;
+  height: 100%;
+}
+section.about .headline {
+  padding-top: 1.5rem;
+}
+section.about h1 {
+  font-size: 1.75rem;
+  font-weight: normal;
+}
+section.about h2 {
+  font-size: 1.5rem;
+}
+section.about h3 {
+  font-size: 0.85rem;
+  font-style: oblique;
+  color: var(--contrast);
+  opacity: 0.65;
+}
+section.about h4 {
+  font-size: 0.85rem;
+  font-style: oblique;
+}
+section.about .img-container img {
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  width: 10rem;
+  height: 10rem;
+  border-style: none;
+  border-radius: 5%;
+}
+section.about .about-img-wrapper {
+  border-radius: 15px;
+  width: 30rem;
+  height: 30rem;
+  display: block;
+  position: relative;
+  margin: 20px auto;
+}
+section.about .cursor {
+  color: var(--link-primary);
+  font-weight: bold;
+  font-size: 2rem;
+}
+section.about .card {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--tertiary);
+  transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+section.about .card .card-text {
+  text-align: justify;
+}
+section.about .text-highlight {
+  font-style: normal;
+  border-radius: 1em 0 1.5em 0.5em;
+  background-image: linear-gradient(-100deg, rgba(231, 136, 107, 0.15), rgba(255, 212, 119, 0.8) 100%, rgba(255, 199, 126, 0.25));
+}
+@media (min-width: 960px) {
+  section.about {
+    padding-top: 0;
+    padding-bottom: 0;
+ }
+  section.about .headline {
+    text-align: left;
+ }
+}
+@media (max-width: 960px) {
+  section.about .about-img-wrapper {
+    width: 20rem;
+    height: 20rem;
+ }
+  section.about h1 {
+    font-size: 1.75rem;
+ }
+  section.about h2 {
+    font-size: 1.75rem;
+ }
+}
+
+section.about .typewrite

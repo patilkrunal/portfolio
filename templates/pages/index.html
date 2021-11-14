@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Home | Krunal Patil{% endblock %}
+
+{% block content %}
+
+{% include '../components/hero.html' %}
+<section class="content" id="content">
+    <div class="container">
+        {% include '../components/education.html' %}
+        {% include '../components/skills.html' %}
+        {% include '../components/experience.html' %}
+        {% include '../components/projects.html' %}
+    </div>
+</section>
+{% include '../components/contactform.html' %}
+{% endblock %}

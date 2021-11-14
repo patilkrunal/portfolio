@@ -1,0 +1,124 @@
+section.blogpost {
+  min-height: 100vh;
+  height: 100%;
+  margin-top: 1.5rem;
+}
+section.blogpost svg {
+  margin: auto 10px;
+}
+section.blogpost h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+section.blogpost .tagline {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  text-align: center;
+}
+section.blogpost .content {
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+section.blogpost .content h2 {
+  text-align: left;
+  font-size: 1.7rem;
+}
+section.blogpost .link {
+  background: var(--tertiary);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--base);
+  font-weight: bold;
+}
+section.blogpost .link:hover {
+  text-decoration: none;
+}
+section.blogpost img {
+  width: 100%;
+  border-radius: 10px;
+}
+section.blogpost .small-img {
+  width: 100%;
+}
+@media (min-width: 960px) {
+  section.blogpost {
+    min-height: 100vh;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  section.blogpost .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  section.blogpost .mx-8 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  section.blogpost h1 {
+    font-size: 2.5rem;
+  }
+  section.blogpost .tagline {
+    font-size: 1rem;
+  }
+  section.blogpost p {
+    font-size: 17px;
+  }
+  section.blogpost .small-img {
+    width: 60%;
+  }
+}
+
+section.blogpost .social-media {
+  transition: 0.5s;
+  transition-delay: 0s;
+  text-align: center;
+  margin: 5px 0;
+}
+
+section.blogpost .social-media-btn {
+  transition: 0.5s;
+  transition-delay: 0s;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 3px;
+  text-align: center;
+}
+section.blogpost .social-media-btn:hover {
+  transform: scale(1.4);
+}
+
+section.blogpost .social-media-btn:nth-child(1) {
+  background: #ffa654;
+}
+
+section.blogpost .social-media-btn:nth-child(2) {
+  background: #25d366;
+}
+
+section.blogpost .social-media-btn:nth-child(3) {
+  background: #e4405f;
+}
+
+section.blogpost .social-media-btn:nth-child(4) {
+  background: #1da1f2;
+}
+
+section.blogpost .social-media-btn:nth-child(5) {
+  background: #1877f2;
+}
+
+section.blogpost .social-media-btn:nth-child(6) {
+  background: #0a66c2;
+}
+
+section.blogpost .social-media-btn:nth-child(7) {
+  background: #c50ec5;
+}

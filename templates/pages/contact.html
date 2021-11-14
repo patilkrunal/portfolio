@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact Me | Krunal Patil{% endblock %}
+
+{% block content %}
+<section class="content" id="content">
+  <div class="container">
+    <section class="contact" id="top">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <h1>Contact Details</h1>
+            <p>
+              Hi! How are you? Thank you for visiting my site. If you have any
+              inquiries or feedback, please don't hesitate to reach out. I am
+              available at the following social media outlets:
+            </p>
+            <Links />
+
+            <a href="https://bit.ly/krunal-cv" target="_blank" rel="noreferrer"
+              class="main-button btn btn-primary shadow-sm mt-2">
+              Download my resume
+            </a>
+          </div>
+          <div class="col-lg-4 my-auto">
+            <div class="img-container">
+              <img src="{% static 'images/contactimg.svg' %}" alt="Vector of a man and a phone" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {% include '../components/contactform.html' %}
+    </section>
+  </div>
+</section>
+{% endblock %}

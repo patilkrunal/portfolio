@@ -1,0 +1,30 @@
+footer {
+  background-color: var(--secondary);
+  bottom: 0;
+  display: block;
+  font-size: 1.3rem;
+}
+footer ul {
+  padding-inline-start: 1px;
+  width: auto !important;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+footer ul a {
+  text-decoration: none;
+}
+
+footer .fas:hover,
+.fab {
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+footer .fas:hover,
+.fab:hover {
+  transform: scale(1.5);
+}

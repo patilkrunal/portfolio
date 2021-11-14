@@ -1,0 +1,75 @@
+{% load static %}
+<section class="contactform">
+  <div class="container">
+    <h2>
+      <span class="ring mr-1" role="img" aria-label="Phone">
+        📱
+      </span>
+      Got any ideas?
+    </h2>
+    <p class="text-muted">Let's talk!</p>
+
+    <div class="row">
+      <div class="col-md-8 my-auto">
+        <form onSubmit={this.submitForm}
+          action="https://formspree.io/$process.env.FORMSPREE_API_KEY https://formspree.io/data.site.siteApiKeys.formSpree"
+          method="POST" id="contactId">
+          <div class="form-group mt-4">
+            <label htmlFor="contactEmail">Email address</label>
+            <input type="email" name="email" class="form-control" id="contactEmail" aria-describedby="emailHelp"
+              placeholder="Please enter a valid email address." required />
+          </div>
+          <!-- <div class="form-group">
+            <label htmlFor="contactMessage">Message</label>
+            <input type="text" class="form-control" id="contactMessage" placeholder="Any awesome project ideas?" />
+          </div> -->
+          <div class="form-group">
+            <label htmlFor="contactMessage">Message</label>
+            <textarea class="form-control" form="contactId" name="message" id="contactMessage"
+              placeholder="Any fun project ideas?"></textarea>
+          </div>
+
+          <!-- {status === "SUCCESS" ? (
+          <div class="alert alert-success" role="alert">
+            Thank you for your message! I'll get back to you soon.
+          </div>
+          ) : ( -->
+          <button class="btn btn-xl shadow-sm"> Let's talk!</button>
+          <!-- )}
+          {status === "ERROR" && (
+          <div class="alert alert-danger mt-2" role="alert">
+            Uh oh! There was an error. Please refresh and we'll try
+            again.
+          </div>
+          )} -->
+        </form>
+      </div>
+
+      <div class="col-lg-4 my-auto">
+        <div class="img-container">
+          <img src="{% static 'images/contactimg.svg' %}" alt="Vector of a man and a phone" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- submitForm(ev) {
+    ev.preventDefault()
+    const form = ev.target
+    const data = new FormData(form)
+    const xhr = new XMLHttpRequest()
+    xhr.open(form.method, form.action)
+    xhr.setRequestHeader("Accept", "application/json")
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return
+      if (xhr.status === 200) {
+        form.reset()
+        this.setState({ status: "SUCCESS" })
+      } else {
+        this.setState({ status: "ERROR" })
+      }
+    }
+    xhr.send(data)
+  } -->
