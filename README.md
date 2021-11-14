@@ -1,6 +1,7 @@
 [patilkrunal.herokuapp.com](https://patilkrunal.herokuapp.com/)  
-[gatsby js dashboard](https://www.pythonanywhere.com/user/gitkp/webapps/#tab_id_gitkp_pythonanywhere_com)
-
+[gatsby js dashboard](https://www.pythonanywhere.com/user/gitkp/webapps/#tab_id_gitkp_pythonanywhere_com)  
+[Fontawesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=copy&m=free)  
+[Bootstrap](https://getbootstrap.com/)  
 
 # Krunal Portfolio API's
 
