@@ -142,6 +142,10 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'https://kp.gtsb.io',
     'https://kpstaging.gatsbyjs.io',
+    'https://patilkrunal.me',
+    'https://patilkrunal.vercel.app/#/',
+    'https://patilkrunal.github.io/Portfolio-Frontend/',
+    'https://patilkrunal.github.io/Portfolio-Frontend/#/'
 )
 
 
