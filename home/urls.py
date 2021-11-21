@@ -7,4 +7,5 @@ urlpatterns = [
     path('contactme/', contactme, name='contactme'),
     path('blogs/<slug:slug>/', singleBlog, name='single-blog'),
     path('blogs/', blogs, name='blogs'),
+    path('all/', allAPIData, name='allAPIData'),
 ]
