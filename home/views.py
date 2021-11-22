@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404, render
 from api.models import *
 
 
-def index(request, flag = False):
+def index(request, flag=False):
     basic_info = BasicInfo.objects.latest('id')
     links = Link.objects.all()
     skills = Skill.objects.all()
@@ -54,7 +54,7 @@ def singleBlog(request, slug):
     return render(request, 'pages/single-blog.html', context)
 
 
-def basicInfo(request, flag = False):
+def basicInfo(request, flag=False):
     result = {}
     basicInfo = BasicInfo.objects.all()
 
@@ -74,7 +74,8 @@ def basicInfo(request, flag = False):
 
     return JsonResponse(result)
 
-def projects(request, flag = False):
+
+def projects(request, flag=False):
     result = {}
     projects = Project.objects.all()
 
@@ -89,13 +90,14 @@ def projects(request, flag = False):
 
     if flag:
         return result
-        
+
     return JsonResponse(result)
 
-def experience(request, flag = False):
+
+def experience(request, flag=False):
     result = {}
     experiences = Experience.objects.all()
-    
+
     for experience in experiences:
         result[experience.id] = {
             'company_name': experience.company_name,
@@ -111,10 +113,11 @@ def experience(request, flag = False):
 
     return JsonResponse(result)
 
-def education(request, flag = False):
+
+def education(request, flag=False):
     result = {}
     educations = Education.objects.all()
-    
+
     for education in educations:
         result[education.id] = {
             'school_name': education.school_name,
@@ -130,10 +133,11 @@ def education(request, flag = False):
 
     return JsonResponse(result)
 
-def skills(request, flag = False):
+
+def skills(request, flag=False):
     result = {}
     skills = Skill.objects.all()
-    
+
     for skill in skills:
         result[skill.id] = {
             'name': skill.name,
@@ -143,29 +147,31 @@ def skills(request, flag = False):
 
     if flag:
         return result
-    
+
     return JsonResponse(result)
 
-def links(request, flag = False):
+
+def links(request, flag=False):
     result = {}
     links = Link.objects.all()
-    
+
     for link in links:
-        result[link.id] = {
+        result[link.name] = {
             'name': link.name,
             'url': link.url,
             'icon_url': link.icon_url
         }
-    
+
     if flag:
         return result
 
     return JsonResponse(result)
 
-def tags(request, flag = False):
+
+def tags(request, flag=False):
     result = {}
     tags = Tag.objects.all()
-    
+
     for tag in tags:
         result[tag.id] = {
             'name': tag.name
@@ -177,8 +183,8 @@ def tags(request, flag = False):
     return JsonResponse(result)
 
 
-def allAPIData(request, flag = False):
-    result  = {
+def allAPIData(request, flag=False):
+    result = {
         'basic_info': basicInfo(request, True),
         'projects': projects(request, True),
         'experience': experience(request, True),
