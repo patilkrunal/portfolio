@@ -16,9 +16,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SECRET_KEY", "secret")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "False")
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'gitkp.pythonanywhere.com', '*']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'patilkrunal.herokuapp.com', '*']
 
 # Application definition
 
@@ -76,10 +76,7 @@ WSGI_APPLICATION = "src.wsgi.application"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-    }
+    "default": dj_database_url.config(default=os.getenv("DATABASE_URL"))
 }
 
 REST_FRAMEWORK = {
@@ -144,7 +141,6 @@ CORS_ORIGIN_WHITELIST = (
     'https://kpstaging.gatsbyjs.io',
     'https://patilkrunal.me',
     'https://patilkrunal.vercel.app',
-    'https://patilkrunal.github.io',
 )
 
 
