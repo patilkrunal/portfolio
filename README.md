@@ -1,3 +1,13 @@
+
+![Website](https://img.shields.io/website?down_color=blue&down_message=offline&up_color=brightgreen&up_message=online&style=flat-square&url=https%3A%2F%2Fgatsby-starter-personal-portfolio.vercel.app)
+[patilkrunal.herokuapp.com](https://patilkrunal.herokuapp.com/)  
+[patilkrunal.azurewebsites.net](https://patilkrunal.azurewebsites.net/)  
+[gatsby js dashboard](https://www.pythonanywhere.com/user/gitkp/webapps/#tab_id_gitkp_pythonanywhere_com)  
+[Fontawesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=copy&m=free)  
+[Bootstrap](https://getbootstrap.com/)  
+
+
+
 <p align="center">
     <img alt="Gatsby" src="https://repository-images.githubusercontent.com/307823747/e1d6d200-198c-11eb-8e33-ff253d9a01ca" width="75%" align="center" />
 </p>
@@ -200,4 +210,61 @@ This project is built on top of [gatsby-starter-hello-world](https://github.com/
 
 Feedback welcome! Please contact me through my email gmlunesa[at]gmail[dot]com, or visit my [website](https://gmlunesa.com).
 
-![Website](https://img.shields.io/website?down_color=blue&down_message=offline&up_color=brightgreen&up_message=online&style=flat-square&url=https%3A%2F%2Fgatsby-starter-personal-portfolio.vercel.app)
+# Krunal Portfolio API's
+
+TODO:  
+
+- [x] BasicInfo  
+    - Name
+    - Place
+    - CaptionTags
+    - Description
+    - AboutTitle
+    - AboutDescription
+    - ProfileImageURL
+
+- [x] Project  
+    - title
+    - description
+    - url
+    - tech_stack
+    - image_url
+
+- [x] Experience  
+    - company_name
+    - position
+    - start_date mm-yyyy
+    - end_date mm-yyyy
+    - tech_stack
+    - description
+
+- [x] Education
+    - school_name
+    - start_date mm-yyyy
+    - end_date mm-yyyy
+    - degree
+    - field_of_study
+    - description
+
+
+- [x] Skills  
+    - name
+    - priority
+    - description
+
+- [x] Contact Links  
+    - name
+    - url
+    - icon_url
+
+- [x] Blogs  
+    - post_title
+    - slug
+    - author
+    - tags
+    - created_on
+    - updated_on
+    - content
+    - status
+    - image_url
+
