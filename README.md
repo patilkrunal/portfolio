@@ -1,5 +1,6 @@
 
 ![Website](https://img.shields.io/website?down_color=blue&down_message=offline&up_color=brightgreen&up_message=online&style=flat-square&url=https%3A%2F%2Fgatsby-starter-personal-portfolio.vercel.app)
+
 [patilkrunal.herokuapp.com](https://patilkrunal.herokuapp.com/)  
 [patilkrunal.azurewebsites.net](https://patilkrunal.azurewebsites.net/)  
 [gatsby js dashboard](https://www.pythonanywhere.com/user/gitkp/webapps/#tab_id_gitkp_pythonanywhere_com)  
@@ -55,6 +56,8 @@ A dark mode toggle is available no matter where your user is on the site. Not qu
     ```shell
     cd my-site
     gatsby develop
+    or 
+    npm run develop
     ```
 
 1.  **Open the source code and start editing!**

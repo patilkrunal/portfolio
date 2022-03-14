@@ -21,7 +21,7 @@ const ContactPage = () => (
             <Links />
 
             <a
-              href="https://bit.ly/krunal-cv"
+              href="https://bit.ly/krunalcv"
               target="_blank"
               rel="noreferrer"
               className="main-button btn btn-primary shadow-sm mt-2"

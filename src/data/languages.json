@@ -1,53 +1,53 @@
 [
   {
-    "language": "C/C++"
+    "language": "Data Structures"
   },
   {
-    "language": "Java"
+    "language": "Object Oriented Programming"
+  },
+  {
+    "language": "Database Management System"
+  },
+  {
+    "language": "C/C++"
   },
   {
     "language": "Python"
   },
   {
+    "language": "Java"
+  },
+  {
+    "language": "Php"
+  },
+  {
     "language": "Django"
-  },
-  {
-    "language": "Django-RestFramework"
-  },
-  {
-    "language": "HTML"
-  },
-  {
-    "language": "CSS"
-  },
-  {
-    "language": "Javascript"
   },
   {
     "language": "ReactJS"
   },
   {
-    "language": "Bootstrap"
+    "language": "Magento 2"
+  },
+  {
+    "language": "Redis"
   },
   {
     "language": "MySQL"
   },
   {
+    "language": "SQLite"
+  },
+  {
+    "language": "REST API"
+  },
+  {
     "language": "Neo4j"
   },
   {
-    "language": "Data Science"
+    "language": "GraphQL"
   },
   {
-    "language": "Github"
-  },
-  {
-    "language": "CorelDraw"
-  },
-  {
-    "language": "Adobe Photoshop"
-  },
-  {
-    "language": "Canva"
+    "language": "Photoshop"
   }
 ]

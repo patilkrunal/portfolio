@@ -33,12 +33,8 @@ const AboutPage = () => (
                 </div>
 
                 <div className="card-text">
-                  I am a software developer enthusiast constantly trying to improve
-                  myself and contributing a little to make this world a better
-                  place to live. You might have got basic understanding about me
-                  from this portfolio website. What you've seen is the complete me.
-                  What I'm on website is am in real life too. Feel free to get in 
-                  touch. I'll be happy to know about you. Cheers!
+                  Enthusiastic about getting exposure to diverse technical domains and solving challenging problems. 
+                  Feel free to get in touch. I'll be happy to know about you. Cheers!
                 </div>
               </div>
             </div>

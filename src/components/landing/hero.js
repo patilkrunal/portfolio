@@ -31,7 +31,7 @@ export default function Hero() {
                 Get to know me
               </Link>
               <a
-                href="https://bit.ly/krunal-cv"
+                href="https://bit.ly/krunalcv"
                 target="_blank"
                 rel="noreferrer"
                 className="main-button btn btn-primary shadow-sm ml-3"
@@ -68,9 +68,7 @@ export default function Hero() {
                     <br />
                   </h4>
                   <p className="card-text">
-                    Backend enthusiast,
-                    <br />
-                    Compassionate
+                    Backend enthusiast
                   </p>
                   <Links />
                 </div>

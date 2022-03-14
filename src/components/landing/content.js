@@ -114,6 +114,39 @@ export default class Content extends Component {
                   <div className="card">
                     <div className="card-body">
                       <div className="card-title">
+                      <h3>Trell Experiences Pvt Ltd</h3>
+                        <h4>
+                          <FontAwesomeIcon
+                            icon={faGraduationCap}
+                            className="mr-2"
+                          />
+                          Software Development Intern
+                        </h4>
+                        <h4>
+                          <FontAwesomeIcon
+                            icon={faUserGraduate}
+                            className="mr-2"
+                          />{" "}
+                          Sept 2021 - Mar 2022
+                        </h4>
+                        <h4>
+                          <FontAwesomeIcon
+                            icon={faLayerGroup}
+                            className="mr-2"
+                          />{" "}
+                          Magento 2 | Php | MySQL | GraphQL | E-Commerce
+                        </h4>
+                      </div>
+
+                      <div className="card-text">
+                      Worked on an E-Commerce platform (Trell Shop) based on Magento 2 PHP framework & MySQL. 
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="card">
+                    <div className="card-body">
+                      <div className="card-title">
                       <h3>MSlate.ai Inc.</h3>
                         <h4>
                           <FontAwesomeIcon
@@ -148,6 +181,7 @@ export default class Content extends Component {
                       </div>
                     </div>
                   </div>
+
                   <div className="card">
                     <div className="card-body">
                       <div className="card-title">

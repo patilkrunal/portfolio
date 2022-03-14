@@ -42,15 +42,22 @@ export default class Footer extends Component {
                       </Link>
                     </li>
                     <li className="list-inline-item mr-4" alt="site title">
-                      Awesome creation by her highness 🙌&nbsp;
-                        <a
+                      Awesome creation by her highness{" "}
+                      <span role="img" aria-label="hands up emoji">
+                        🙌
+                      </span>
+                      &nbsp;
+                      <a
                         href="https://github.com/gmlunesa"
                         target="_blank"
                         rel="noreferrer"
                       >
-                      GMLUNESA
+                        GMLUNESA
                       </a>
-                      &nbsp;🙌
+                      &nbsp;
+                      <span role="img" aria-label="hands up emoji">
+                        🙌
+                      </span>
                     </li>
                     <li className="list-inline-item mr-4">
                       <a

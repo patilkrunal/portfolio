@@ -8,7 +8,7 @@
   {
     "project": "Cricket match Scorecard Simulator",
     "language": "DSA | OOPS | C++",
-    "description": "virtual cricket match scorecard simulator as mini-project for DSA course using data structures in C++",
+    "description": "Virtual cricket match scorecard simulator using OOPS in C++",
     "link": "https://github.com/patilkrunal/cricket-score-simulator"
   },
   {
@@ -42,10 +42,10 @@
     "link": "https://github.com/patilkrunal/aitecell"
   },
   {
-    "project": "Portfolio website",
-    "language": "Gatsby JS",
-    "description": "Ultrablazingly fast portfolio website in GatsbyJS. Check its lighthouse ratings. You'll be amazed.",
-    "link": "https://kp.gatsbyjs.io/"
+    "project": "PHP MVC Framework",
+    "language": "Php",
+    "description": "Followed a tutorial to create MVC framework from scratch.",
+    "link": "https://github.com/patilkrunal/php-mvc-basic"
   },
   {
     "project": "Python Scripts",
