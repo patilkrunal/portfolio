@@ -1,4 +1,70 @@
 
+Last Updated content: 
+- added turtlemint work experience
+- enhanced with dynamic content from admin panel
+- made minor fixes
+- updated the readme file
+
+
+# Krunal Portfolio API's
+
+TODO:  
+
+- [x] BasicInfo  
+    - Name
+    - Place
+    - CaptionTags
+    - Description
+    - AboutTitle
+    - AboutDescription
+    - ProfileImageURL
+
+- [x] Project  
+    - title
+    - description
+    - url
+    - tech_stack
+    - image_url
+
+- [x] Experience  
+    - company_name
+    - position
+    - start_date mm-yyyy
+    - end_date mm-yyyy
+    - tech_stack
+    - description
+
+- [x] Education
+    - school_name
+    - start_date mm-yyyy
+    - end_date mm-yyyy
+    - degree
+    - field_of_study
+    - description
+
+
+- [x] Skills  
+    - name
+    - priority
+    - description
+
+- [x] Contact Links  
+    - name
+    - url
+    - icon_url
+
+- [x] Blogs  
+    - post_title
+    - slug
+    - author
+    - tags
+    - created_on
+    - updated_on
+    - content
+    - status
+    - image_url
+
+
 ![Website](https://img.shields.io/website?down_color=blue&down_message=offline&up_color=brightgreen&up_message=online&style=flat-square&url=https%3A%2F%2Fgatsby-starter-personal-portfolio.vercel.app)
 
 [patilkrunal.herokuapp.com](https://patilkrunal.herokuapp.com/)  
@@ -212,62 +278,3 @@ This project is built on top of [gatsby-starter-hello-world](https://github.com/
 ## 👍 Feedback
 
 Feedback welcome! Please contact me through my email gmlunesa[at]gmail[dot]com, or visit my [website](https://gmlunesa.com).
-
-# Krunal Portfolio API's
-
-TODO:  
-
-- [x] BasicInfo  
-    - Name
-    - Place
-    - CaptionTags
-    - Description
-    - AboutTitle
-    - AboutDescription
-    - ProfileImageURL
-
-- [x] Project  
-    - title
-    - description
-    - url
-    - tech_stack
-    - image_url
-
-- [x] Experience  
-    - company_name
-    - position
-    - start_date mm-yyyy
-    - end_date mm-yyyy
-    - tech_stack
-    - description
-
-- [x] Education
-    - school_name
-    - start_date mm-yyyy
-    - end_date mm-yyyy
-    - degree
-    - field_of_study
-    - description
-
-
-- [x] Skills  
-    - name
-    - priority
-    - description
-
-- [x] Contact Links  
-    - name
-    - url
-    - icon_url
-
-- [x] Blogs  
-    - post_title
-    - slug
-    - author
-    - tags
-    - created_on
-    - updated_on
-    - content
-    - status
-    - image_url
-
