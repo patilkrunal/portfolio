@@ -9,9 +9,12 @@ def index(request, flag=False):
     links = Link.objects.all()
     skills = Skill.objects.all()
     projects = Project.objects.all()
+    resume = Link.objects.filter(name='Resume').first()
+
     context = {
         'basic_info': basic_info,
         'links': links,
+        'resume': resume,
         'skills': skills,
         'projects': projects
     }
