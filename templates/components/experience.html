@@ -5,10 +5,34 @@
     <span class="word">work with</span>?
   </h2>
 
+  {% for experience in experiences %}
   <div class="card">
     <div class="card-body">
       <div class="card-title">
-        <h3>Turtlemint</h3>
+        <h3>{{experience.company_name}}</h3>
+        <h4>
+          <i class="fas fa-graduation-cap mr-2"></i>
+          {{experience.position}}
+        </h4>
+        <h4>
+          <i class="fas fa-calendar-alt mr-2"></i> Aug
+          2022-Present
+        </h4>
+        <h4>
+          <i class="fas fa-layer-group mr-2"></i> {{experience.tech_stack}}
+        </h4>
+      </div>
+      <div class="card-text">
+        {{experience.description}}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title">
+        <h3>Turtlemint2</h3>
         <h4>
           <i class="fas fa-graduation-cap mr-2"></i>
           Full Stack Developer

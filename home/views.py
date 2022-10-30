@@ -97,7 +97,7 @@ def projects(request, flag=False):
     return JsonResponse(result)
 
 
-def experience(request, flag=False):
+def experiences(request, flag=False):
     result = {}
     experiences = Experience.objects.all()
 
@@ -190,7 +190,7 @@ def allAPIData(request, flag=False):
     result = {
         'basic_info': basicInfo(request, True),
         'projects': projects(request, True),
-        'experience': experience(request, True),
+        'experiences': experiences(request, True),
         'education': education(request, True),
         'skills': skills(request, True),
         'links': links(request, True),
